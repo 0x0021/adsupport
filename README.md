@@ -18,23 +18,38 @@
 4. 调试完毕后请关闭flask调试模式
 
 ### 模块说明:
-已改用flask框架重写项目
-服务器部署为mod_wsgi+Apache/uwsgi+Nginx
-adhelper.wsgi:wsgi接口
-main.py:主函数,监听钉钉http回调
-Conf.py:配置文件,定义相关数值
-DingOpreta.py:钉钉基本操作
-ADOperate.py:AD域操作
-DingCallbackCrypto.py:钉钉http回调函数
-dingtalk:钉钉官方api
-venv:虚拟环境
-uwsgi.ini:uwsgi配置文件
+已改用`flask`框架重写项目
+
+服务器部署为`mod_wsgi+Apache/uwsgi+Nginx`
+
+`adhelper.wsgi`:wsgi接口
+
+`main.py`:主函数,监听钉钉http回调
+
+`Conf.py`:配置文件,定义相关数值
+
+`DingOpreta.py`:钉钉基本操作
+
+`ADOperate.py`:AD域操作
+
+`DingCallbackCrypto.py`:钉钉http回调函数
+
+`dingtalk`:钉钉官方api
+
+`venv`:虚拟环境
+
+`uwsgi.ini`:uwsgi配置文件
 
 ### 如何修改配置文件:
-Conf.py文件已定义相关api所需用到的项及其值
+
+`Conf.py`文件已定义相关`api`所需用到的项及其值
+
 根据项目实际的应用信息,服务器信息等
+
 替换其中的赋值
 
 ### 钉钉api的用法以及返回值:
+
 请参考钉钉官方文档
+
 https://developers.dingtalk.com/document/app/server-api-overview
